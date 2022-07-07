@@ -2,7 +2,7 @@
 import sqlite3
 
 #영구적으로 파일에 저장
-con = sqlite3.connect("C:\\work\\test.db")
+con = sqlite3.connect("C:\\work\\sample.db")
 #커서객체를 리턴
 cur = con.cursor()
 #데이터를 저장할 테이블 생성
@@ -27,3 +27,5 @@ print(cur.fetchmany(2))
 print("---fechchall()---")
 print(cur.fetchall())
 
+#정상적으로 완료
+con.commit()
