@@ -24,4 +24,5 @@ if __name__ == "__main__":
     demoWindow.show()
     #이벤트 대기
     app.exec_()
+
     
